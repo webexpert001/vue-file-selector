@@ -19,6 +19,7 @@
         ref="fsFileInput"
         type="file"
         tabindex="-1"
+        :name="inputName"
         :multiple="multiple"
         :accept="acceptExtensions"
         @change="handleFilesChange"
@@ -69,6 +70,11 @@ export default {
       type: Function,
       default: () => true,
     },
+
+    inputName: {
+      type: String,
+      default: 'file'
+    }
   },
 
   data() {
