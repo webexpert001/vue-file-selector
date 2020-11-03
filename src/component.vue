@@ -157,7 +157,7 @@ export default {
       }
 
       // clear selected files
-      this.$refs.fsFileInput.value = '';
+      // this.$refs.fsFileInput.value = '';
     },
   },
 };
